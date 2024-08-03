@@ -1,0 +1,98 @@
+body, html{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-color: grey;
+  padding: 10px;
+  text-align: left;
+  color: gold;
+}
+.logo{
+  height: 50px;
+}
+.main{
+  padding: 20px;
+}
+.background-image{
+  background-image:linear-gradient(rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4)50%), url('f2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contents{
+  text-align: center;
+}
+.contents h1{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.contents lb{
+  font-family: Times New Roman;
+  color: white;
+  font-size: 10px
+}
+.contents a{
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: 0.3s
+}
+.contents a: hover{
+  background-color: white;
+  color: aqua;
+}
+footer{
+  width:100%;
+  color: white;
+      background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+      position: right; /* required to position the copyright at the bottom */
+      font-size: 80%;
+    }
+    .footer-copyright {
+      color: black;
+      text-align: center;
+      width: 94%;
+      height: 30px;
+      background-color: aqua ;
+      /* positions the copyright at the bottom of the footer */
+      padding: 10px;
+      position: center;
+      bottom: 0px;
+      left: 0px;
+    }
+    .footer-body {
+      margin-bottom: 40px;
+      padding: 30px;
+    }
+    .footer-body h3{
+      color: gold;
+      font-family: arial balck;
+      font-size: 14;
+    }
+    .footer-body p{
+      color: green;
+    }
+    .footer-body > div:first-child {
+      font-size: 150%;
+      text-align: left;
+    }
+    .footer-body ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+    }
+    .footer-body li > a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 7px;
+      border: none;
+      padding: 0;
+      font-size: 15px;
+      
+}

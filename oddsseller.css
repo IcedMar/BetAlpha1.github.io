@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.background{
+  background-image: linear-gradient(rgba(0,0,0,0.65)50%, rgba(0,0,0,0.65)50%), url("casino4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contents h1{
+  text-align: center;
+  color: aqua;
+  border: 1px inset green;
+}
+.contents p1{
+  color: white;
+  font-family: Times New Roman;
+}
+.contents p2{
+  color: white;
+  font-family: Times New Roman;
+}
+.form label{
+  display: block;
+  width:90%;
+  margin: 1rem 0 0.5rem;
+  border: 1px inset #0076ff;
+  border-radius: 5px;
+  background: none;
+  color: greenyellow;
+  text-align: center;
+}
+.form input{
+  width:90%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.contents p3{
+  font-family: Times new roman;
+  color: gold;
+}
+.button{
+  text-align: right;
+}
+.button{
+  #btn1{
+    font-size: 15px;
+    color: aqua;
+    background: none;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.3s
+}}
+.button a{
+  font-size: 15px;
+  color: red;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: 0.3s
+}

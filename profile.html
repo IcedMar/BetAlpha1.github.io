@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <header>
+        <h1>Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="BettorMain.html">Home</a></li>
+                <li><a href="deposit.html">Deposit</a></li>
+                <li><a href="home.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile-view">
+            <!-- Profile information will be displayed here -->
+        </section>
+
+        <section id="profile-edit" style="display: none;">
+            <h2>Edit Profile</h2>
+            <form id="edit-profile-form">
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+              
+                <label for="phone">Contact:</label>
+                <input type="tel" id="phone" name="phone" required>
+              
+                <label for="ID">National ID:</label>
+                <input type="text" id="ID" name="ID" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Save Changes</button>
+                <button type="button" onclick="toggleEditProfile(false)">Cancel</button>
+            </form>
+        </section>
+
+        <button id="edit-profile-button" onclick="toggleEditProfile(true)">Edit Profile</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Betting Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/profile.js"></script>
+</body>
+</html>

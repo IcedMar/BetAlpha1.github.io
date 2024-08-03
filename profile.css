@@ -1,0 +1,179 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile section styles */
+#profile-view {
+    display: block;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-picture {
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-details h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#edit-profile-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#edit-profile-button:hover {
+    background-color: #45a049;
+}
+
+#profile-edit {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#profile-edit.hidden {
+    display: none;
+}
+
+#profile-edit h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#edit-profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#edit-profile-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#edit-profile-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#edit-profile-form button:hover {
+    background-color: #45a049;
+}
+
+/* Betting history section styles */
+#betting-history {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#betting-history h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#betting-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#betting-history th, #betting-history td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: #555;
+}
+
+#betting-history th {
+    background-color: #f2f2f2;
+}
+
+.hidden {
+    display: none;
+}
+

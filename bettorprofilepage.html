@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bettor Profile</title>
+    <link rel="stylesheet" href="styles/bettorprofile.css">
+</head>
+<body>
+    <header>
+        <h1>Bettor Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="deposit.html">Deposit</a></li>
+                <li><a href="withdrawal.html">Withdraw</a></li>
+                <li><a href="home.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile-view">
+            <div class="profile-picture">
+                <img src="path/to/profile_picture.jpg" alt="User's Profile Picture" width="300" height="250">
+            </div>
+            <div class="profile-details">
+                <h2 id="username">Username</h2>
+                <p>Balance: $<span id="balance">0.00</span></p>
+                <h3>Transaction History:</h3>
+                <ul id="transaction-history">
+                    <!-- Transaction history items will be appended here -->
+                </ul>
+                <h3>Betting History:</h3>
+                <ul id="betting-history">
+                    <!-- Betting history items will be appended here -->
+                </ul>
+                <button id="update-profile-button">Update Profile</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Betting Platform. All rights reserved.</p>
+    </footer>
+
+    <!-- Profile Update Modal -->
+    <div id="update-profile-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal-button" style="color:red;">&times;</span>
+            <form id="update-profile-form">
+              <h2 style="font-size: 20px; text-align: center; "> Update your profile</h2>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" required>
+              
+                <label for="new-profile-picture">Profile Picture URL:</label>
+                <input type="file" id="new-profile-picture" name="new-profile-picture" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="phone">Contact:</label>
+                <input type="tel" id="phone" name="phone" required>
+              
+                <label for="state">Country of residence:</label>
+                <input type="text" id="state" name="state" required>
+                
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/bettorprofile.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Platform</title>
+    <link rel="stylesheet" href="styles/main1.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+</head>
+<body>
+    <header class="header-container">
+        <img src="images/logo5.jpg" alt="Header Image" class="header-image">
+        <div class="header-text">BetAlpha1</div>
+      <hr>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Registration.html">Register</a></li>
+                <li><a href="Home.html">LogIn</a></li>
+                <li><a href="about.html">AboutUs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/f1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/cr1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/2.jpg" style="width:100%">
+        </div>
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <!-- Dot indicators -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+  <hr>
+        <section id="games-display">
+            <h2 style="text-align: center;">Upcoming Games</h2>
+            <!-- Display upcoming games here -->
+            <!-- You can use slots for images -->
+            <div class="game">
+                <img src="game1.jpg" alt="Game 1">
+                <p>Description of Game 1</p>
+            </div>
+            <div class="game">
+                <img src="game2.jpg" alt="Game 2">
+                <p>Description of Game 2</p>
+            </div>
+            <!-- Add more game slots as needed -->
+        </section>
+      <section id="odds-seller">
+        <h2 style="text-align: center;"> Top 3 Odds Sellers</h2>
+        <div class="list">
+          <img src="profile1.jpg" alt="Seller 1">
+          <p>Total odds sold (7 days)<br> Ratings.</p>
+        </div>
+        <div class="list">
+          <img src="profile2.jpg" alt="Seller 2">
+          <p>Total odds sold (7 days)<br> Ratings.</p>
+        </div>
+        <div class="list">
+          <img src="profile3.jpg" alt="Seller 3">
+          <p>Total odds sold (7 days)<br> Ratings.</p>
+        </div>
+      </section>
+
+        <section id="past-games">
+            <h2 style="text-align: center;">Past Games and Winners</h2>
+            <!-- Review past games and winners here -->
+            <div class="game-result">
+                <h3>Game 1</h3>
+                <p>Winner: Team A</p>
+                <p>Date: January 1, 2024</p>
+            </div>
+            <div class="game-result">
+                <h3>Game 2</h3>
+                <p>Winner: Team B</p>
+                <p>Date: January 2, 2024</p>
+            </div>
+            <!-- Add more past game results as needed -->
+        </section>
+    </main>
+  <script src="scripts/slideshow.js"></script>
+    <footer>
+        <p>&copy; 2025 IcedMarTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>

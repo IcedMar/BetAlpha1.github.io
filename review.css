@@ -1,0 +1,20 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+.seller {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.seller h3 {
+    margin-top: 0;
+}
+
+.seller p {
+    margin-bottom: 0;
+}
+

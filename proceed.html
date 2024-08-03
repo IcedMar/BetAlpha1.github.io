@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Window</title>
+    <link rel="stylesheet" href="styles/proceed.css">
+</head>
+<body>
+    <button id="show-popup">Proceed</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <label>Create your username and password</label>
+          <br>
+          <div class="password-container">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+          </div>
+          <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+          </div>
+          <div class="password-container">
+            <input type="password" id="confirmation" name="confirmation" placeholder="Confirm" required>
+            <br>
+          </div>
+            <div class="button-group">
+                <button type="button" id="ok-button" onclick="open_page">OK</button>
+                <button type="button" id="cancel-button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/proceed.js"></script>
+</body>
+</html>

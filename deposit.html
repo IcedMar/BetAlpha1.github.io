@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles/payment.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Page</h1>
+        <nav>
+            <ul>
+                <li><a href="BettorMain.html">Home</a></li>
+                <li><a href="bettorprofilepage.html">Profile</a></li>
+                <li><a href="logIn.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="payment-options">
+            <h2>Select Payment Method</h2>
+            <form id="payment-form">
+                <div class="payment-option">
+                    <input type="radio" id="paypal" name="payment-method" value="paypal" required>
+                    <label for="paypal">PayPal</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="stripe" name="payment-method" value="stripe" required>
+                    <label for="stripe">Stripe</label>
+                </div>
+              <div class="payment-option">
+                <input type="radio" id="M-Pesa" name="payment-method" value="M-Pesa" required>
+                <label for="M-Pesa">M-Pesa</label>
+              </div>
+                <div class="payment-option">
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+                    <label for="credit-card">Credit Card</label>
+                </div>
+                <button type="submit">Proceed to Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Betting Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/payment.js"></script>
+</body>
+</html>

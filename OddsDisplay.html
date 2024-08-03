@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/oddsdisplay.css">
+  <title>OddsDisplay</title>
+</head>
+<body>
+    <h1>Available Odds within 24 Hours</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Odd Value</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Price</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ odd.event }}</td>
+                <td>{{ odd.odd_value }}</td>
+                <td>{{ odd.start_time }}</td>
+                <td>{{ odd.end_time }}</td>
+                <td>{{ odd.price }}</td>
+                <td><a href="{{ odd.link }}">View Seller</a></td>
+            </tr>
+        </tbody>
+    </table>
+  <script src="scripts/oddsdisplay.js"></script>
+</body>
+</html>

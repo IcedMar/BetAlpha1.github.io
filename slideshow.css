@@ -1,0 +1,115 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Header container */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out the elements */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* Header image */
+.header-image {
+  width: 80px; /* Set desired width */
+  height: 60px; /* Set desired height */
+  margin-right: 10px; /* Space between header image and text */
+}
+
+/* Header text */
+.header-text {
+  font-size: 20px; /* Set desired font size */
+  font-weight: bold; /* Set desired font weight */
+  color: #333; /* Set desired text color */
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin-right: auto; /* Ensure text logo stays left-aligned */
+}
+
+/* Header menu */
+.header-menu {
+  margin-left: auto; /* Pushes the menu to the right */
+}
+
+.header-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; /* Prevent menu items from wrapping */
+}
+
+.header-menu ul li {
+  margin-left: 20px; /* Space between menu items */
+}
+
+.header-menu ul li a {
+  text-decoration: none;
+  color: #333; /* Set desired link color */
+  font-size: 16px; /* Set desired font size */
+  font-weight: normal; /* Set desired font weight */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Dot indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+

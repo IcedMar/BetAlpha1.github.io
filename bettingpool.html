@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Pool Example</title>
+    <link rel="stylesheet" href="styles/bettingpool.css">
+</head>
+<body>
+    <header>
+        <h1>Betting Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="BettorMain.html">Home</a></li>
+                <li><a href="bettorprofilepage.html">Profile</a></li>
+                <li><a href="home.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="betting-section">
+            <h2>Place Your Bets</h2>
+            <form id="betting-form">
+                <label for="bet-amount">Bet Amount:</label>
+                <input type="number" id="bet-amount" name="bet-amount" required>
+                
+                <label for="event">Event:</label>
+                <select id="event" name="event" required>
+                    <option value="event1">Event 1</option>
+                    <option value="event2">Event 2</option>
+                </select>
+                
+                <button type="submit">Place Bet</button>
+            </form>
+        </section>
+        
+        <section id="odds-sellers">
+            <h2>Odds Sellers</h2>
+            <ul id="odds-seller-list">
+                <!-- List of odds sellers will be populated here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Betting Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/bettingpool.js"></script>
+</body>
+</html>

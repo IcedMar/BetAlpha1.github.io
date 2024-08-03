@@ -1,0 +1,18 @@
+body{
+  background-color: aqua;
+}
+h1{
+  text-align: center;
+  color: black;
+  border-style: outset;
+}
+h2{
+  color: goldenrod;
+}
+footer{
+  text-align: center;
+  color: blueviolet;
+  border-style: inset;
+}
+
+

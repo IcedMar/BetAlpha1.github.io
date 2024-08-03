@@ -1,0 +1,129 @@
+*{
+  
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+}
+ body{
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ main{
+   flex: 1 0 auto;
+ }
+.content{
+  text-align: center;
+}
+.content >div:img{
+  margin: 0;
+  float: left;
+}
+.content h1{
+  font-size: 60px;
+  color: blue;
+  margin-bottom: 30px
+}
+.content a{
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+. content a: hover{
+  background-color: white;
+  color: black;
+}
+.background-clip{
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+  .background-clip{
+    width: 100vh;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio:16/9){
+  .background-clip{
+    width:auto;
+    height: 100vh;
+  }
+}
+footer {
+  color: #fff;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("cassino1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; /* required to position the copyright at the bottom */
+  font-size: 80%;
+}
+ .footer-copyright a {
+   text-align: center;
+   text-decoration: none;
+   color: aqua;
+   width: 100%;
+   height: 40px;
+   background: #111;
+   /* positions the copyright at the bottom of the footer */
+   padding: 10px;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+ }
+.footer-body {
+  margin-bottom: 40px;
+}
+/* the clearfix hack */
+ .footer-body::after {
+   content: "";
+   display: block;
+   clear: both;
+ }
+/* float the divs */
+ .footer-body > div:p {
+   float: left;
+   padding: 20px;
+ }
+ .footer-body > div:image{
+   float: left;
+ }
+/* sets the width of the first column */
+ .footer-body > div:first-child {
+   font-size: 60%;
+   width: 25%;
+   text-align: right;
+ }
+/* sets the width of the second column */
+ .footer-body > div:last-child {
+   width: 50%;
+ }
+ .footer-body ul {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+ }
+.footer-body li > a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 7px;
+}

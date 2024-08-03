@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Odds</title>
+    <link rel="stylesheet" href="styles/oddsmanagement.css">
+</head>
+<body>
+    <h2>Add Odds</h2>
+    <form id="add-odds-form">
+        <label for="sport">Sport:</label>
+        <select id="sport" name="sport">
+          <option value="choice">Select</option>
+            <option value="football">Soccer</option>
+            <option value="basketball">Basketball</option>
+          <option value="horseriding">Horse Riding</option>
+            <option value="tennis">Tennis</option>
+          <option value="volleyball">Volleyball</option>
+          <option value="Rugby"> American Football/Rugby</option>
+          <option value="cricket"> Cricket</option>
+          <option value="Golf"> Golf</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event" placeholder="Enter event name" required>
+
+        <label for="odds-type">Odds Type:</label>
+        <select id="odds-type" name="odds-type">
+          <option value="choice"> Select</option>
+            <option value="decimal">Decimal</option>
+            <option value="fractional">Fractional</option>
+          <option value="american">MoneyLine</option>
+            <!-- Add more options as needed -->
+        </select>
+      <label for="odd_value">Odd Value</label>
+      <input type="number" step="0.01" id="odd_value" name="odd_value" required>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" placeholder="Enter price" required>
+      <label for="start_time"> Starts:</label>
+      <input type="datetime-local" id="start_time" name="start_time" required>
+      <label for="end_time"> Ends:</label>
+      <input type="datetime-local" id="end_time" name="end_time" required>
+
+        <button type="submit">Add Odds</button>
+    </form>
+</body>
+</html>

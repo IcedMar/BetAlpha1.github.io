@@ -1,0 +1,180 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, Times new roman;
+    line-height: 1.6;
+    background-color:  blueviolet;
+}
+.mySlides {
+  display: none
+}
+.img {
+  vertical-align: middle;
+}
+
+
+
+header {
+    background-color: greenyellow;
+    color: black;
+    padding: 20px;
+    text-align: left;
+}
+.logo{
+  height: 50px;
+  margin-right: 10px;
+}
+.header-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+  margin-right: auto;
+}
+header-menu{
+  margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+     display: block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  font-size: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Dot indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Styles for games display section */
+#games-display {
+    margin-top: 20px;
+}
+
+.game {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+/*styles for odds seller section*/
+#odds-seller{
+  margin-top: 20px;
+}
+.list{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styles for past games section */
+#past-games {
+    margin-top: 20px;
+}
+
+.game-result {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.game-result h3 {
+    margin-top: 0;
+}
+
+.game-result p {
+    margin-bottom: 5px;
+}
+
