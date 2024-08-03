@@ -3,7 +3,7 @@ document.getElementById('show-popup').addEventListener('click', function() {
 });
 
 document.getElementById('ok-button').addEventListener('click', function open_page() {
-    window.open("home.html")
+    window.open("Home.html")
     document.getElementById('popup').style.display = 'none';
     // Add any additional functionality for OK button here
 });
